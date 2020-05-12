@@ -24,6 +24,9 @@ function rootReducer(state = initialState, action) {
     return Object.assign({}, state, {
       articles: state.articles.concat(action.payload)
     });
+
+    //ES6 展開
+    //return {...state, articles:[...state.articles, action.payload]}
   }
 
   /**
