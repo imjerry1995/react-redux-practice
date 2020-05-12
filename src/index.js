@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import store from "./store/index";
+import {
+  addArticle
+} from "./store/action/index";
+
+window.store = store; // 將store 綁訂到全域
+window.addArticle = addArticle;
 
 ReactDOM.render(
   <React.StrictMode>

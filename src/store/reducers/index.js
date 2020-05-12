@@ -1,4 +1,4 @@
-import { ADD_ARTICLE } from "./action/index"
+import { ADD_ARTICLE } from "../action/index"
 
 const initialState = {
   articles: []
@@ -33,7 +33,6 @@ function rootReducer(state = initialState, action) {
    * use concat, slice, or the spread operator for arrays
    * use Object.assign or object spread of objects
    */
-
 
   return state;
 };
